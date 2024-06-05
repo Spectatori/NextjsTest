@@ -1,26 +1,41 @@
 import Image from "next/image";
-
 import {
     StyledTextContainer,
     StyledContainer,
-    StyledGetStartedBtn,
     StyledTitle,
     StyledDescription,
-    StyledCTAContainer,
-    Background, StyledImageContainer,
+    Background,
+    StyledImageContainer,
+    Panels, PanelBackground, ButtonsPanel, PanelButton
 } from "./elements";
 
-export const Villain = ({ background, title, description, ctaText,image, ...props }) => {
+export const Villain = ({ background, title, description, ctaText, image, ...props }) => {
     return (
         <Background>
-                <StyledContainer {...props}>
-                    <StyledTextContainer>
-                        <StyledTitle>{title}</StyledTitle>
-                        <StyledDescription>{description}</StyledDescription>
-                    </StyledTextContainer>
-                </StyledContainer>
-            <Image layout="responsive" src={background.src} alt={background.alt} width={background.width} height={background.height} />
+            <StyledContainer {...props}>
+                <StyledTextContainer>
+                    <StyledTitle>{title}</StyledTitle>
+                    <StyledDescription>{description}</StyledDescription>
+                </StyledTextContainer>
+            </StyledContainer>
+            <Panels>
+                <PanelBackground style={{ backgroundImage: `url(${background.src})` }} />
+                <StyledImageContainer>
+                    <Image layout="responsive" src={image.src} alt={image.alt} width={image.width} height={image.height} />
+                </StyledImageContainer>
+                <ButtonsPanel>
+                    <PanelButton>
 
+                    </PanelButton>
+                    <PanelButton>
+
+                    </PanelButton>
+                    <PanelButton>
+
+                    </PanelButton>
+                    <Image layout="responsive" src={image.src} alt={image.alt} width={image.width} height={image.height} />
+                </ButtonsPanel>
+            </Panels>
         </Background>
     );
 };

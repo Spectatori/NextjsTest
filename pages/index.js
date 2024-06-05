@@ -7,8 +7,8 @@ const heroProps = {
   ctaText: "Start",
 };
 const villainProps = {
-    background: { src: "/img/background.png", alt: "", width: 400, height:145},
-    image:{src: "/img/video.png", alt: "", width: 145, height:500},
+    background: { src: "/img/background.png", alt: "", width: 1980, height:1038},
+    image:{src: "/img/video.png", alt: "", width: 658, height:1050},
     title: "Managed agency selection",
     description: "Strengthen your onboarding process",
     ctaText: "Start",
