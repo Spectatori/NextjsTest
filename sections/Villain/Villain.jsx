@@ -11,11 +11,13 @@ import {
     Panels,
     PanelBackground,
     ButtonsPanel,
-    PanelButton,
     PanelButtonImage,
     PanelButtonTitle,
     PanelButtonDescription,
-    TextContainer
+    TextContainer,
+    BriefButton,
+    SearchButton,
+    PitchButton,
 } from "./elements";
 
 export const Villain = ({ background, title, description, ctaText, image, brief, pitch, search, ...props }) => {
@@ -33,7 +35,7 @@ export const Villain = ({ background, title, description, ctaText, image, brief,
                     <Image layout="responsive" src={image.src} alt={image.alt} width={image.width} height={image.height} />
                 </StyledImageContainer>
                 <ButtonsPanel>
-                    <PanelButton>
+                    <BriefButton>
                         <PanelButtonImage>
                             <Image layout="responsive" src={brief.src} alt={brief.alt} width={brief.width} height={brief.height} />
                         </PanelButtonImage>
@@ -42,11 +44,11 @@ export const Villain = ({ background, title, description, ctaText, image, brief,
                                 Brief
                             </PanelButtonTitle>
                             <PanelButtonDescription>
-                                <p>Complete <strong>brief writing or simple guidance</strong> on what to include, we've got you covered</p>
+                                Complete <strong>brief writing or simple guidance</strong> on what to include, we've got you covered
                             </PanelButtonDescription>
                         </TextContainer>
-                    </PanelButton>
-                    <PanelButton>
+                    </BriefButton>
+                    <SearchButton>
                         <PanelButtonImage>
                             <Image layout="responsive" src={search.src} alt={search.alt} width={search.width} height={search.height} />
                         </PanelButtonImage>
@@ -58,8 +60,8 @@ export const Villain = ({ background, title, description, ctaText, image, brief,
                                 In-depth agency search covering; <strong>criteria matching</strong>, door knocking and due-diligence vetting
                             </PanelButtonDescription>
                         </TextContainer>
-                    </PanelButton>
-                    <PanelButton>
+                    </SearchButton>
+                    <PitchButton>
                         <PanelButtonImage>
                             <Image layout="responsive" src={pitch.src} alt={pitch.alt} width={pitch.width} height={pitch.height} />
                         </PanelButtonImage>
@@ -71,7 +73,7 @@ export const Villain = ({ background, title, description, ctaText, image, brief,
                                 Comprehensive <strong>pitch management</strong>, including comms, diary management and pitch hosting
                             </PanelButtonDescription>
                         </TextContainer>
-                    </PanelButton>
+                    </PitchButton>
                 </ButtonsPanel>
             </Panels>
         </Background>
