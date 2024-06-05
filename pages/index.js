@@ -9,6 +9,9 @@ const heroProps = {
 const villainProps = {
     background: { src: "/img/background.png", alt: "", width: 1980, height:1038},
     image:{src: "/img/video.png", alt: "", width: 658, height:1050},
+    brief:{src: "/img/brief.png", alt: "", width: 512, height:512},
+    pitch:{src: "/img/pitch.png", alt: "", width: 1200, height:1200},
+    search:{src: "/img/search.png", alt: "", width: 512, height:512},
     title: "Managed agency selection",
     description: "Strengthen your onboarding process",
     ctaText: "Start",

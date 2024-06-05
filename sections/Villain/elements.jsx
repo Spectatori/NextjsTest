@@ -17,16 +17,19 @@ export const Panels = styled(({...props}) => <div {...props} />)`
 
 export const PanelBackground = styled(({ ...props }) => <div {...props} />)`
     position: absolute;
-    width: 100%;
+    width: 95%;
     height: 100%;
     z-index: -1;
     background-size: contain;
     background-repeat: no-repeat;
     margin-top:3rem;
-    margin-left:9rem;
+    margin-left:4rem;
 `;
 export const ButtonsPanel = styled(({ ...props }) => <div {...props} />)`
-    max-width: 25rem;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    max-width: 27rem;
     max-height: 65rem;
     width: 100%;
     height: 100%;
@@ -34,7 +37,37 @@ export const ButtonsPanel = styled(({ ...props }) => <div {...props} />)`
     padding-right:15rem;
 `;
 export const PanelButton = styled(({ ...props }) => <div {...props} />)`
+    background-color:gray; //*#F9F9F9
+    border-radius:0.5rem;
+    display:flex;
+    flex-direction:row;
+    border: 3px solid transparent;
+        &:hover{
+            border-color:dodgerblue;
+            cursor:pointer;
+        }
 `;
+export const PanelButtonImage = styled(({ ...props }) => <div {...props} />)`
+    width:10rem;
+    padding:3.5rem;
+`;
+
+export const TextContainer = styled(({ ...props }) => <div {...props} />)`
+    display:flex;
+    flex-direction:column;
+    padding-top:2rem;
+    gap:1rem;
+    padding-right:2rem;
+`;
+export const PanelButtonTitle = styled(({ ...props }) => <div {...props} />)`
+
+`;
+export const PanelButtonDescription = styled(({ ...props }) => <div {...props} />)`
+
+`;
+
+
+
 
 export const StyledContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
     display: flex;
